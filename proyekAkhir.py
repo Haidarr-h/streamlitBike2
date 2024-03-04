@@ -40,7 +40,7 @@ if option == 'Jam dengan Jumlah Pengguna':
 elif option == 'Cuaca dengan Jumlah Pengguna':
 
 
-    day_df = pd.read_csv("hour_df.csv")
+    day_df = pd.read_csv("https://raw.githubusercontent.com/Haidarr-h/streamlitBike/main/hour_df.csv")
 
     working_weather_day = day_df.groupby("weathersit")["cnt"].sum()
     working_weather_day.index = ["Clear", "Mist", "Rain", "Storm"]
